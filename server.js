@@ -40,7 +40,9 @@ app.listen(PORT, ()=> {
     .then(result => {
         console.log(result)
     })
-    .catch(error=> serverError(res, error))
+    .catch(error => {
+        console.log(error)
+    })
            
     
 })
